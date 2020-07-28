@@ -9,18 +9,7 @@ const app = express()
 mongoose.connect('mongodb://localhost:27017/nodeapi', {useUnifiedTopology: true, useNewUrlParser: true})
 requireDir('./src/models')
 
-const Product = mongoose.model('Product')
-
-// Creating the route.
-app.get('/', (req, res) => {
-
-    Product.create({
-        title: 'React Native',
-        descriptions: 'Build native apps with React Native',
-        url: 'https://github.com/facebook/react-native'
-    })
-
-    return res.send('Hello, servidor!')
-})
+// Routes.
+app.use('/api', require('./src/routes'))
 
 app.listen(3001)
