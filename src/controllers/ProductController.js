@@ -6,11 +6,17 @@ module.exports = {
         const products = await Product.find()
 
         return res.json(products)
-    },
+    }, // listagem de produtos
+
+    async show(req, res) {
+        const product = await Product.findById(req.params.id)
+
+        return res.json(product)
+    }, // detalhe
 
     async store(req, res) {
         const product = await Product.create(req.body)
 
         return res.json(product)
-    }
+    } // criação de produtos
 }
