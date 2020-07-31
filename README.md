@@ -15,3 +15,9 @@
 
 
 ### :rocket: Ferramentas
+![MongoDB](https://github.com/edualvesf13/nodeapi-course-starter/blob/master/images/mongodb.png)
+![Docker](https://github.com/edualvesf13/nodeapi-course-starter/blob/master/images/docker.png)
+![Git](https://github.com/edualvesf13/nodeapi-course-starter/blob/master/images/git.png)
+![Insomnia](https://github.com/edualvesf13/nodeapi-course-starter/blob/master/images/insomnia.png)
+![NodeJs](https://github.com/edualvesf13/nodeapi-course-starter/blob/master/images/nodejs.png)
+![Robo3T](https://github.com/edualvesf13/nodeapi-course-starter/blob/master/images/robo3t.png)
