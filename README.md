@@ -39,3 +39,10 @@ Insira os comandos abaixos no terminal para verificar a versão do NodeJs e NPM
    
    
 ### :dart: ServerJs
+* Arquivo: server.js
+``` 
+const express = require('express')
+const app = express()
+app.listen(3001) 
+```
+* No terminal digite `node server.js` e no navegador abra: localhost:3001
