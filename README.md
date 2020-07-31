@@ -8,7 +8,7 @@
 * [Instalando NodeJs](#dart-nodejs)
 * [Criando estrutura](#dart-estrutura)
 * [Criando o ServerJs](#dart-serverjs)
-* [FAQ](#postbox-faq)
+* [Criando a Primeira rota](#dart-rota)
 * [Found a bug? Missing a specific feature?](#bug-issues)
 * [Contributing](#tada-contributing)
 * [License](#closed_book-license
@@ -45,4 +45,21 @@ const express = require('express')
 const app = express()
 app.listen(3001) 
 ```
-* No terminal digite `node server.js` e no navegador abra: localhost:3001
+* Instalando o Nodemon como dependência de desenvolvimento
+   * `npm install --save-dev nodemon`
+   > É um módulo que irá monitorar todas as alterações nos arquivos da aplicação e reinicia automaticamente o servidor.
+
+No arquivo package.json acrescente:
+```
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+```
+* Execute o comando `npm run dev` para rodar o servidor
+
+### :dart: Rota
+No arquivo Server.js vamos utilizar o método .get() do express passando 2 parâmetros.
+`app.get('/', (req, res) => {
+  res.send('Mensagem de retorno')
+} )`
